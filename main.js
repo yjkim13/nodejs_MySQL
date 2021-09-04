@@ -23,6 +23,8 @@ var app = http.createServer(function(request,response){
       topic.update_process(request,response);
     } else if (pathname === '/delete_process') { // 글 삭제 프로세스
       topic.delete_process(request,response);
+    } else if (pathname === '/search') { // 글 삭제 프로세스
+      topic.search(request,response);
     } else if (pathname === '/author') { // 
       author.home(request,response);
     } else if (pathname === '/author/create_process') { // 
